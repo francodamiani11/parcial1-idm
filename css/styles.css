@@ -1,3 +1,101 @@
-*{
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*font-family: Lora, serif;*/
+    line-height: 1.5;
+    background-color: rgb(246, 241, 227);
+} 
+
+main, header {
+    width: 90vh;
+    margin: 0px auto;
+}
+
+h1{
+    display: none;
+}
+
+/*BLOQUE 1 - BANNER*/
+
+.contenedor-banner{
+    width: calc(100vw - 15px);
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    video{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    p{
+        position: absolute;
+    }
+}
+
+/*BLOQUE 2 - 6 PARRAFOS DE TEXTO + IMAGEN*/
+
+/*BLOQUE 3 - RANKING GLOBAL ESPORTS*/
+
+/*BLOQUE 4 - EQUIPOS*/
+
+
+/* MOVIL */
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+
+    /*BLOQUE 1 - BANNER*/
+
+    .contenedor-banner{
+        width: calc(100vw);
+    }
+
+    /*BLOQUE 2 - 6 PARRAFOS DE TEXTO + IMAGEN*/
+
+    /*BLOQUE 3 - RANKING GLOBAL ESPORTS*/
+
+    /*BLOQUE 4 - EQUIPOS*/
     
+}
+
+/* TABLET */
+
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+
+    /*BLOQUE 1 - BANNER*/
+
+    .contenedor-banner{
+        width: calc(100vw);
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+
+        video{
+            width: 100%;
+            object-fit: cover;
+        }
+
+        p{
+            position: absolute;
+        }
+    }
+
+    /*BLOQUE 2 - 6 PARRAFOS DE TEXTO + IMAGEN*/
+
+    /*BLOQUE 3 - RANKING GLOBAL ESPORTS*/
+
+    /*BLOQUE 4 - EQUIPOS*/
+    
+}
+
+/* DISPOSITIVOS TOUCH MAS GRANDES QUE TABLET QUE NO TENGAN BARRA DE SCROLL */
+@media screen and (min-width: 1023px) and (max-width: 1920px) {
+    .contenedor-banner{
+        width: calc(100vw);
+    }
+
 }
