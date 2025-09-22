@@ -10,11 +10,6 @@ body {
     background-color: rgb(246, 241, 227);
 } 
 
-main, header {
-    width: 90vh;
-    margin: 0px auto;
-}
-
 h1{
     display: none;
 }
@@ -26,20 +21,118 @@ h1{
     height: 100vh;
     overflow: hidden;
     position: relative;
-
+    font-size: 40px;
+    
     video{
         width: 100%;
         object-fit: cover;
+        height: 100vh;
     }
 
-    p{
-        position: absolute;
+}
+
+.contenedor-leyenda-banner{
+    font-family: "Oswald", sans-serif;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    h2{
+        color: white;
+        font-size: 2.5em;
+        font-family: "Oswald", sans-serif;
+        font-weight: 700;
+        padding: 35px;
+        text-align: center;
+        text-shadow: 7px 1px 5px #1e1c1c;
+        background-image: linear-gradient(0deg, #fddc8f, transparent);
     }
+   
 }
 
 /*BLOQUE 2 - 6 PARRAFOS DE TEXTO + IMAGEN*/
 
 /*BLOQUE 3 - RANKING GLOBAL ESPORTS*/
+
+.contenedor-ranking{
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    background-image: url('../img/background-ranking.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    padding-top: 70px;
+
+    h2{
+        font-size: 2em;
+    }
+
+    p{
+        margin-top: 15px;
+        font-size: 2em;
+        font-weight: 200;
+    }
+
+}
+
+.contenedor-tarjetas-principales{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.tarjeta-principal{
+    margin: 30px;
+    width: 400px;
+    height: 250px;
+    background-color: aliceblue;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.tarjeta-principal.gold {
+    background: rgba(247, 200, 45, 0.466);
+    border-color: rgba(212,175,55,0.7);
+}
+
+.tarjeta-principal.silver {
+    background: rgba(255, 255, 255, 0.466);
+    border-color: rgba(238, 232, 232, 0.685);
+}
+
+.tarjeta-principal.bronce {
+    background: rgba(124, 94, 30, 0.466);
+    border-color: rgba(141, 115, 59, 0.466);
+}
+
+.tarjeta-principal.gold:hover {
+    background: rgba(212, 175, 55, 0.8);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    transform: translateY(-5px);
+}
+
+.tarjeta-principal.silver:hover {
+    background: rgba(202, 202, 202, 0.8);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    transform: translateY(-5px);
+}
+
+.tarjeta-principal.bronce:hover {
+    background: rgba(124, 94, 30, 0.8);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    transform: translateY(-5px);
+}
 
 /*BLOQUE 4 - EQUIPOS*/
 
@@ -69,7 +162,7 @@ h1{
     /*BLOQUE 1 - BANNER*/
 
     .contenedor-banner{
-        width: calc(100vw);
+        width: 100vw;
         height: 100vh;
         overflow: hidden;
         position: relative;
@@ -77,10 +170,20 @@ h1{
         video{
             width: 100%;
             object-fit: cover;
+            height: 100%;
         }
 
-        p{
-            position: absolute;
+    }
+
+    .contenedor-leyenda-banner{
+        width: 100%;
+
+        h2{
+            padding-bottom: 130px;
+            font-size: 1.5em;
+            width: 70%;
+            margin: 0 auto;
+            background-image: linear-gradient(45deg, #fddc8f, transparent);
         }
     }
 
@@ -88,14 +191,43 @@ h1{
 
     /*BLOQUE 3 - RANKING GLOBAL ESPORTS*/
 
+    .contenedor-ranking{
+        width: 100%;
+        height: 700px;
+        text-align: center;
+        font-family: "Oswald", sans-serif;
+        background-image: url('../img/background-ranking.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: whitesmoke;
+        padding-top: 70px;
+
+        h2{
+            
+        }
+
+        p{
+            margin-top: 15px;
+            font-size: 3em;
+            line-height: 1.6;
+            font-weight: 200;
+        }
+
+    }
+
+    .contenedor-tarjetas-principales{
+        flex-direction: column;
+        align-items: center;
+    }
+
     /*BLOQUE 4 - EQUIPOS*/
     
 }
 
-/* DISPOSITIVOS TOUCH MAS GRANDES QUE TABLET QUE NO TENGAN BARRA DE SCROLL */
+/* DISPOSITIVOS TOUCH MAS GRANDES QUE TABLET QUE NO TENGAN BARRA DE SCROLL 
 @media screen and (min-width: 1023px) and (max-width: 1920px) {
     .contenedor-banner{
-        width: calc(100vw);
+        width: 100vw;
     }
 
-}
+}*/
