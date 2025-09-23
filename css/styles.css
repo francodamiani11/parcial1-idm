@@ -53,6 +53,80 @@ h1{
 
 /*BLOQUE 2 - 6 PARRAFOS DE TEXTO + IMAGEN*/
 
+ .esports-section {
+  background: #00040af8;        
+  padding: 60px 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1700px;          
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 45px;
+  margin-bottom: 10px;
+  color: #e6eef6; 
+  font-family: "Oswald", sans-serif;           
+}
+
+.subtitle {
+  font-size: 17.6px;
+  color: #9aa6b2;             
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.hero-image {
+  flex: 1;
+  
+}
+
+.hero-image img {
+  width: 600px; 
+  max-width: 100%; 
+  border-radius: 12px;
+  display: block;
+  margin-top: 100px;
+}
+
+.hero-image figcaption {
+  margin-top: 8px;
+  font-size: 14.4px;
+  color: #9aa6b2;             
+}
+
+.text {
+  flex: 2;
+  font-size: 17px;
+  line-height: 1.6;
+  text-align: justify;
+  color: #ebeef0;             
+}
+
+.text strong{
+   color:  rgb(245, 189, 5);
+}
+
+.text em{
+    color:rgb(241, 241, 136)
+}
+
+.text p {
+  margin-bottom: 18px;
+  
+}
+
 /*BLOQUE 3 - RANKING GLOBAL ESPORTS*/
 
 .contenedor-ranking{
@@ -135,6 +209,99 @@ h1{
 }
 
 /*BLOQUE 4 - EQUIPOS*/
+
+.contenedor-equipos{
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    background-image: url('../img/background-ranking.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    padding-top: 70px;
+    width: 100%;
+    min-height: 700px;
+}
+
+.titulo-gigantes{
+    font-size: 45px;
+}
+
+.texto-gigantes{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 2em;
+    font-weight: 200;
+    max-width: 1900px;
+}
+
+.card-selector {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  box-shadow: 0 0 30px gold;
+  
+  
+}
+
+.card {
+  position: relative;
+  height: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 2px solid transparent;
+  box-shadow: gold;
+  display: block;
+  text-align: center;
+  
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(212, 165, 8, 0.4);
+}
+
+.card input[type="radio"] {
+  display: none;
+}
+
+.card .bg-img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.9);
+  transition: filter 0.3s;
+}
+
+.card span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 0 5px black;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.card input[type="radio"]:checked + .bg-img {
+  filter: brightness(1) saturate(1.2);
+}
+
+.card input[type="radio"]:checked ~ span {
+  background: rgba(124, 121, 121, 0.7);
+  color: #ffffff;
+  text-shadow: 0 0 10px rgb(50, 147, 238);
+}
 
 
 /* MOVIL */
