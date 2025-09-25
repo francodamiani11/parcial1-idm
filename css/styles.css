@@ -16,18 +16,25 @@ h1{
 
 /*BLOQUE 1 - BANNER*/
 
+@keyframes shimmer {
+  0% { background-position: 200% center; }
+  100% { background-position: 0 center; }
+}
+
 .contenedor-banner{
-    width: calc(100vw - 15px);
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-    font-size: 40px;
-    
-    video{
-        width: 100%;
-        object-fit: cover;
-        height: 100vh;
-    }
+  background-image: url('../img/GifBanner.gif');
+  width: calc(100vw - 15px);
+  height: 80vh;
+  position: relative;
+  font-size: 40px;
+  padding: 50px;
+  
+  
+  video{
+      width: 100%;
+      object-fit: cover;
+      height: 100vh;
+  }
 
 }
 
@@ -37,18 +44,59 @@ h1{
     bottom: 0;
     right: 0;
     left: 0;
+    background-image: linear-gradient(195deg, #00040a, transparent);
+    box-shadow: 2px 0px 20px 13px rgba(124, 94, 30, 0.8);
+    padding: 40px;
 
-    h2{
-        color: white;
-        font-size: 2.5em;
-        font-family: "Oswald", sans-serif;
-        font-weight: 700;
-        padding: 35px;
-        text-align: center;
-        text-shadow: 7px 1px 5px #1e1c1c;
-        background-image: linear-gradient(0deg, #fddc8f, transparent);
+    h2 {
+      position: relative;
+      font-weight: 800;
+      background: linear-gradient(90deg, #fddc8f 20%, #fff 40%, #fddc8f 60%);
+      background-size: 200% auto;
+      background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      animation: shimmer 4s linear infinite;
+      font-size: 2.4em;
+      text-align: center;
+      -webkit-text-stroke: 0.5px #000000;
+      text-transform: uppercase;
     }
    
+}
+
+.contenedor-tarjetas-banner{
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.tarjeta-banner{
+  flex: 1 1;
+  background: rgba(9, 10, 14, 0.36);
+  border: 1px solid rgba(255,255,255,0.06);
+  backdrop-filter: blur(8px) saturate(120%);
+  box-shadow: 0 6px 18px rgba(2,6,23,0.55), inset 0 1px 0 rgba(255,255,255,0.02);
+  color: #fff;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  border-radius: 20px;
+  max-width: fit-content;
+  text-align: center;
+  
+    .texto-tarjeta{
+      display: flex;
+      flex-direction: column;
+      font-family: "Oswald", sans-serif;
+      text-shadow: 7px 0px 5px rgb(103 103 103 / 55%);
+    }
+}
+
+.cifras{
+  font-size: 1.9em;
 }
 
 /*BLOQUE 2 - 6 PARRAFOS DE TEXTO + IMAGEN*/
@@ -93,8 +141,7 @@ h1{
 }
 
 .hero-image img {
-  width: 600px; 
-  max-width: 100%; 
+  max-width: 100%;
   border-radius: 12px;
   display: block;
   margin-top: 100px;
@@ -115,11 +162,11 @@ h1{
 }
 
 .text strong{
-   color:  rgb(245, 189, 5);
+  color:  rgb(245, 189, 5);
 }
 
 .text em{
-    color:rgb(241, 241, 136)
+  color:rgb(241, 241, 136)
 }
 
 .text p {
@@ -130,82 +177,81 @@ h1{
 /*BLOQUE 3 - RANKING GLOBAL ESPORTS*/
 
 .contenedor-ranking{
-    width: 100%;
-    height: 700px;
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    background-image: url('../img/background-ranking.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: whitesmoke;
-    padding-top: 70px;
+  width: 100%;
+  height: 700px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  background-image: url('../img/background-ranking.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: whitesmoke;
+  padding-top: 70px;
 
-    h2{
-        font-size: 2em;
-    }
+  h2{
+      font-size: 2em;
+  }
 
-    p{
-        margin-top: 15px;
-        font-size: 2em;
-        font-weight: 200;
-    }
-
+  p{
+      margin-top: 15px;
+      font-size: 2em;
+      font-weight: 200;
+  }
 }
 
 .contenedor-tarjetas-principales{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .tarjeta-principal{
-    margin: 30px;
-    width: 400px;
-    height: 250px;
-    background-color: aliceblue;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-    transition: all 0.3s ease;
+  margin: 30px;
+  width: 400px;
+  height: 250px;
+  background-color: aliceblue;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
 }
 
 .tarjeta-principal.gold {
-    background: rgba(247, 200, 45, 0.466);
-    border-color: rgba(212,175,55,0.7);
+  background: rgba(247, 200, 45, 0.466);
+  border-color: rgba(212,175,55,0.7);
 }
 
 .tarjeta-principal.silver {
-    background: rgba(255, 255, 255, 0.466);
-    border-color: rgba(238, 232, 232, 0.685);
+  background: rgba(255, 255, 255, 0.466);
+  border-color: rgba(238, 232, 232, 0.685);
 }
 
 .tarjeta-principal.bronce {
-    background: rgba(124, 94, 30, 0.466);
-    border-color: rgba(141, 115, 59, 0.466);
+  background: rgba(124, 94, 30, 0.466);
+  border-color: rgba(141, 115, 59, 0.466);
 }
 
 .tarjeta-principal.gold:hover {
-    background: rgba(212, 175, 55, 0.8);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    transform: translateY(-5px);
+  background: rgba(212, 175, 55, 0.8);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  transform: translateY(-5px);
 }
 
 .tarjeta-principal.silver:hover {
-    background: rgba(202, 202, 202, 0.8);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    transform: translateY(-5px);
+  background: rgba(202, 202, 202, 0.8);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  transform: translateY(-5px);
 }
 
 .tarjeta-principal.bronce:hover {
-    background: rgba(124, 94, 30, 0.8);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    transform: translateY(-5px);
+  background: rgba(124, 94, 30, 0.8);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  transform: translateY(-5px);
 }
 
 /*BLOQUE 4 - EQUIPOS*/
@@ -311,7 +357,8 @@ h1{
     /*BLOQUE 1 - BANNER*/
 
     .contenedor-banner{
-        width: calc(100vw);
+        width: 80vw;
+        height: auto;
     }
 
     /*BLOQUE 2 - 6 PARRAFOS DE TEXTO + IMAGEN*/
@@ -329,17 +376,14 @@ h1{
     /*BLOQUE 1 - BANNER*/
 
     .contenedor-banner{
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        position: relative;
+      width: 100vw;
+      height: 80vw;
 
-        video{
-            width: 100%;
-            object-fit: cover;
-            height: 100%;
-        }
-
+      video{
+          width: 100%;
+          object-fit: cover;
+          height: 100%;
+      }
     }
 
     .contenedor-leyenda-banner{
