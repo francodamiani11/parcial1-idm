@@ -555,12 +555,13 @@ h1{
 /*BLOQUE 1 - BANNER*/
 
 .contenedor-banner{
+  width: 100vw;
+  height: 50vh;
   padding: 20px;
-  height: auto;
 }
 
 .contenedor-leyenda-banner h2 {
-  font-size: 5em;
+  font-size: 2em;
   -webkit-text-stroke: 0.3px #000;
 }
 
@@ -569,7 +570,10 @@ h1{
 }
 
 .contenedor-leyenda-banner{
-  position: relative;
+  font-size: 1.5em;
+  top: 0;
+  display: flex;
+  align-items: center;
 }
 
 
@@ -579,8 +583,8 @@ h1{
 
 .contenedor-ranking{
 
-  h2{
-    font-size: 3.5em;
+h2{
+    font-size: 3.2em;
   }
 }
 
@@ -594,7 +598,7 @@ h1{
 
   p {
     font-weight: 200;
-    font-size: 1.8em;
+    font-size: 1.6em;
     padding: 20px;
   }
 }
@@ -602,13 +606,16 @@ h1{
 .contenedor-tarjetas-principales {
   flex-direction: column;
   align-items: center;
-
+  margin: 0 auto;
 }
 
-  /*BLOQUE 4 - EQUIPOS*/
-    
+.tarjeta-principal{
+  width: 300px;
 }
 
+
+  /*BLOQUE 4 - EQUIPOS*/  
+}
 /* TABLET */
 
 @media screen and (min-width: 601px) and (max-width: 1023px) {
