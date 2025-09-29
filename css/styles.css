@@ -1,3 +1,10 @@
+/* VARIABLES */
+
+:root {
+  
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,7 +12,7 @@
 }
 
 body {
-    /*font-family: Lora, serif;*/
+    font-family: "Oswald", serif;
     line-height: 1.5;
     background-color: rgb(246, 241, 227);
 } 
@@ -23,11 +30,12 @@ h1{
 
 .contenedor-banner{
   background-image: url('../img/GifBanner.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
   width: calc(100vw - 15px);
-  height: 80vh;
+  height: 70vh;
   position: relative;
-  font-size: 40px;
-  padding: 50px;
+  padding: 30px;
   
   
   video{
@@ -57,7 +65,7 @@ h1{
       color: transparent;
       -webkit-text-fill-color: transparent;
       animation: shimmer 4s linear infinite;
-      font-size: 2.4em;
+      font-size: 5.5em;
       text-align: center;
       -webkit-text-stroke: 0.5px #000000;
       text-transform: uppercase;
@@ -66,37 +74,42 @@ h1{
 }
 
 .contenedor-tarjetas-banner{
-    margin: 0 auto;
-    display: flex;
-    gap: 80px;
-    border-radius: 20px;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  border-radius: 20px;
+  justify-content: center;
+  width: 100%;
+  font-size: 2em;
 }
 
 .tarjeta-banner{
-  flex: 1 1;
+  flex: 0 1 20%;
   background: rgba(9, 10, 14, 0.36);
   border: 1px solid rgba(255,255,255,0.06);
   backdrop-filter: blur(8px) saturate(120%);
   box-shadow: 0 6px 18px rgba(2,6,23,0.55), inset 0 1px 0 rgba(255,255,255,0.02);
   color: #fff;
   display: flex;
-  padding: 30px;
+  padding: 20px;
   flex-direction: column;
   border-radius: 20px;
-  max-width: fit-content;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  
+  
+  
   
     .texto-tarjeta{
       display: flex;
       flex-direction: column;
       font-family: "Oswald", sans-serif;
-      text-shadow: 7px 0px 5px rgb(103 103 103 / 55%);
+      font-weight: bold;
     }
 }
 
 .cifras{
-  font-size: 1.9em;
 }
 
 /*BLOQUE 2 - 6 PARRAFOS DE TEXTO + IMAGEN*/
@@ -177,24 +190,31 @@ h1{
 /*BLOQUE 3 - RANKING GLOBAL ESPORTS*/
 
 .contenedor-ranking{
-  width: 100%;
-  height: 700px;
   text-align: center;
   font-family: "Oswald", sans-serif;
   background-image: url('../img/background-ranking.webp');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: bottom;
   color: whitesmoke;
-  padding-top: 70px;
+  padding: 80px 0;
+  background-image: linear-gradient(182deg, #595136, #0000006e);
+  
+  
 
   h2{
-      font-size: 45px;
+    font-size: 3.5em;
   }
 
+}
+
+.titulo-ranking{
+  width: 80%;
+  margin: 0 auto;
+
   p{
-      margin-top: 15px;
-      font-size: 2em;
-      font-weight: 200;
+    font-weight: 200;
+    font-size: 2em;
   }
 }
 
@@ -206,53 +226,154 @@ h1{
 
 .tarjeta-principal{
   margin: 30px;
+  padding: 20px;
   width: 400px;
   height: 250px;
   background-color: aliceblue;
   padding: 20px;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.3);
   transition: all 0.3s ease;
+  position: relative;
+  border-top-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 2em;
+}
+
+.club{
+  font-size: 90%;
+}
+
+.club p:first-of-type {
+  font-weight: 300;
+}
+
+.ranking{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  right: 0;
+  top: 0;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  font-size: 35px;
+  justify-content: flex-end;
+  flex-direction: column;
+  
+  
+  .ranking-number{
+    font-size: 100%;
+    font-weight: bold;
+  }
+
+  p{
+    font-size: 40%;
+  }
+
+}
+
+.ranking.gold{
+  background-color: rgb(155, 121, 10);
+}
+
+.ranking.silver{
+  background-color: rgba(104, 101, 101, 0.747);
+}
+
+.ranking.bronce{
+  background-color: rgba(104, 76, 17, 0.863);
 }
 
 .tarjeta-principal.gold {
-  background: rgba(247, 200, 45, 0.466);
-  border-color: rgba(212,175,55,0.7);
+  background: rgb(219 169 5 / 48%);
 }
 
 .tarjeta-principal.silver {
   background: rgba(255, 255, 255, 0.466);
-  border-color: rgba(238, 232, 232, 0.685);
 }
 
 .tarjeta-principal.bronce {
-  background: rgba(124, 94, 30, 0.466);
-  border-color: rgba(141, 115, 59, 0.466);
+  background: rgb(87 63 11 / 47%);
 }
 
 .tarjeta-principal.gold:hover {
-  background: rgba(212, 175, 55, 0.8);
+  background-color: rgba(187, 153, 41, 0.589);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   transform: translateY(-5px);
 }
 
 .tarjeta-principal.silver:hover {
-  background: rgba(202, 202, 202, 0.8);
+  background-color: rgba(202, 202, 202, 0.8);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   transform: translateY(-5px);
 }
 
 .tarjeta-principal.bronce:hover {
-  background: rgba(124, 94, 30, 0.8);
+  background-color: rgba(124, 94, 30, 0.8);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   transform: translateY(-5px);
 }
+
+.contenedor-imagen-equipo{
+  width: 30%;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  bottom: 10%;
+}
+
+.contenedor-imagen-equipo img{
+    width: 100%;
+    margin: 0 auto;
+    opacity: 0.2;
+    transition: opacity 0.3s ease;
+}
+
+.tarjeta-principal:hover .contenedor-imagen-equipo img {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.tarjeta-principal:hover .contenedor-imagen-equipo img {
+  opacity: 1;
+}
+
+.contenedor-informacion{
+  display: flex;
+  gap: 50px;
+  margin-top: 60px;
+  font-size: 1.4em;
+  margin-bottom: 30px;
+}
+
+.medals{
+  display: flex;
+  flex-direction: column;
+  font-size: 55%;
+}
+
+.ccpoints{
+  display: flex;
+  flex-direction: column;
+  font-size: 55%;
+}
+
+.contenedor-informacion p:first-of-type {
+  color: #000000;
+  font-weight: 500;
+  text-shadow: 2px 2px 5px rgb(255, 235, 235);
+  font-size: 0.7em;
+}
+
+
 
 /*BLOQUE 4 - EQUIPOS*/
 
@@ -427,23 +548,64 @@ h1{
 }
 
 
-
 /* MOVIL */
 
 @media screen and (min-width: 0px) and (max-width: 600px) {
 
-    /*BLOQUE 1 - BANNER*/
+/*BLOQUE 1 - BANNER*/
 
-    .contenedor-banner{
-        width: 80vw;
-        height: auto;
-    }
+.contenedor-banner{
+  padding: 20px;
+  height: auto;
+}
 
-    /*BLOQUE 2 - 6 PARRAFOS DE TEXTO + IMAGEN*/
+.contenedor-leyenda-banner h2 {
+  font-size: 5em;
+  -webkit-text-stroke: 0.3px #000;
+}
 
-    /*BLOQUE 3 - RANKING GLOBAL ESPORTS*/
+.contenedor-tarjetas-banner {
+  display: none;
+}
 
-    /*BLOQUE 4 - EQUIPOS*/
+.contenedor-leyenda-banner{
+  position: relative;
+}
+
+
+  /*BLOQUE 2 - 6 PARRAFOS DE TEXTO + IMAGEN*/
+
+  /*BLOQUE 3 - RANKING GLOBAL ESPORTS*/
+
+.contenedor-ranking{
+
+  h2{
+    font-size: 3.5em;
+  }
+}
+
+.titulo-ranking{
+
+  background: rgb(105 99 78);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px 0px rgb(0 0 0 / 10%);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgb(227 227 227 / 30%);
+
+  p {
+    font-weight: 200;
+    font-size: 1.8em;
+    padding: 20px;
+  }
+}
+
+.contenedor-tarjetas-principales {
+  flex-direction: column;
+  align-items: center;
+
+}
+
+  /*BLOQUE 4 - EQUIPOS*/
     
 }
 
@@ -451,63 +613,46 @@ h1{
 
 @media screen and (min-width: 601px) and (max-width: 1023px) {
 
-    /*BLOQUE 1 - BANNER*/
+  /*BLOQUE 1 - BANNER*/
 
-    .contenedor-banner{
-      width: 100vw;
-      height: 80vw;
+  .contenedor-tarjetas-banner {
+    display: none;
+  }
 
-      video{
-          width: 100%;
-          object-fit: cover;
-          height: 100%;
-      }
+  .contenedor-banner{
+    padding: 30px;
+    height: auto;
+
+    video{
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
     }
+  }
+  
+  .contenedor-leyenda-banner{
+    position: relative;
+  }
 
-    .contenedor-leyenda-banner{
-        width: 100%;
+  .contenedor-leyenda-banner h2{
+    font-size: 4.5em;
+    -webkit-text-stroke: 0.3px #000;
+  }
 
-        h2{
-            padding-bottom: 130px;
-            font-size: 1.5em;
-            width: 70%;
-            margin: 0 auto;
-            background-image: linear-gradient(45deg, #fddc8f, transparent);
-        }
-    }
 
-    /*BLOQUE 2 - 6 PARRAFOS DE TEXTO + IMAGEN*/
+  /*BLOQUE 2 - 6 PARRAFOS DE TEXTO + IMAGEN*/
 
-    /*BLOQUE 3 - RANKING GLOBAL ESPORTS*/
-
-    .contenedor-ranking{
-        width: 100%;
-        height: 700px;
-        text-align: center;
-        font-family: "Oswald", sans-serif;
-        background-image: url('../img/background-ranking.webp');
-        background-size: cover;
-        background-repeat: no-repeat;
-        color: whitesmoke;
-        padding-top: 70px;
-
-        h2{
-            
-        }
-
-        p{
-            margin-top: 15px;
-            font-size: 3em;
-            line-height: 1.6;
-            font-weight: 200;
-        }
-
-    }
+  /*BLOQUE 3 - RANKING GLOBAL ESPORTS*/
 
     .contenedor-tarjetas-principales{
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
+
+
+  .tarjeta-principal.bronce{
+    margin-bottom: 30px;
+  }
 
     /*BLOQUE 4 - EQUIPOS*/
     
