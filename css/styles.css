@@ -579,6 +579,46 @@ h1{
 
   /*BLOQUE 2 - 6 PARRAFOS DE TEXTO + IMAGEN*/
 
+  .esports-section {
+    padding: 30px 15px; 
+  }
+
+  .title {
+    font-size: 28px; 
+    text-align: center;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    flex-direction: column; 
+    gap: 20px;
+  }
+
+  .hero-image img {
+    margin-top: 0; 
+    border-radius: 8px;
+  }
+
+  .hero-image figcaption {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .text {
+    font-size: 15px;
+    text-align: left; 
+  }
+
+  .text p {
+    margin-bottom: 14px;
+  }
+
+
   /*BLOQUE 3 - RANKING GLOBAL ESPORTS*/
 
 .contenedor-ranking{
@@ -615,7 +655,82 @@ h2{
 
 
   /*BLOQUE 4 - EQUIPOS*/  
-}
+  .titulo-gigantes {
+    font-size: 28px;
+    line-height: 1.2;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .texto-gigantes {
+    font-size: 15px;
+    line-height: 1.7;
+    padding: 0 20px;
+    text-align: justify;
+    font-family: Arial, sans-serif;
+   
+
+    max-width: 90%;   
+    margin: 0 auto;   
+  }
+  
+
+  /* Cards de equipos */
+  .card-selector {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 12px;
+    padding: 10px;
+  }
+
+  .card {
+    height: 160px; 
+  }
+
+  .card span {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  /* Reseñas */
+  .reviews-title {
+    font-size: 26px;
+  }
+
+  .reviews-subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr; 
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .review-card {
+    padding: 15px;
+  }
+
+  .review-photo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .review-text {
+    font-size: 15px;
+  }
+
+  .review-name {
+    font-size: 15px;
+  }
+
+  .review-icon {
+    font-size: 20px;
+    top: 5px;
+    right: 5px;
+  }
+  }
+
 /* TABLET */
 
 @media screen and (min-width: 601px) and (max-width: 1023px) {
@@ -649,6 +764,60 @@ h2{
 
   /*BLOQUE 2 - 6 PARRAFOS DE TEXTO + IMAGEN*/
 
+ @media screen and (min-width: 601px) and (max-width: 1023px) {
+  .title {
+    font-size: 34px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .content {
+    display: block;  
+    text-align: center;
+  }
+
+  .hero-image {
+    max-width: 90%;
+    margin: 0 auto 30px auto; 
+  }
+
+  .hero-image img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 40px; 
+  }
+
+  .hero-image figcaption {
+    font-size: 14px;
+    margin-top: 8px;
+    color: #9aa6b2;
+  }
+
+  .text {
+    font-size: 17px;
+    line-height: 1.7;
+    text-align: justify;
+    padding: 0 25px;
+  }
+
+  .text p {
+    margin-bottom: 18px;
+  }
+
+  .text strong {
+    color: rgb(245, 189, 5);
+  }
+
+  .text em {
+    color: rgb(241, 241, 136);
+  }
+
   /*BLOQUE 3 - RANKING GLOBAL ESPORTS*/
 
     .contenedor-tarjetas-principales{
@@ -662,7 +831,75 @@ h2{
   }
 
     /*BLOQUE 4 - EQUIPOS*/
+
+    .titulo-gigantes {
+    font-size: 34px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .texto-gigantes {
+    font-size: 17px;
+    padding: 0 25px;
+    text-align: center;
+  }
+
+  /* Cards de equipos */
+  .card-selector {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 25px;
+    padding: 0 20px;
+  }
+
+  .card {
+    height: 180px;
+  }
+
+  .card span {
+    font-size: 15px;
+    padding: 8px;
+  }
+
+  /* Reseñas */
+  .reviews-title {
+    font-size: 32px;
+  }
+
+  .reviews-subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .reviews-grid {
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 25px;
+    padding: 0 20px;
+  }
+
+  .review-card {
+    padding: 18px;
+  }
+
+  .review-photo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .review-text {
+    font-size: 16px;
+  }
+
+  .review-name {
+    font-size: 16px;
+  }
+
+  .review-icon {
+    font-size: 22px;
+    top: 8px;
+    right: 8px;
+  }
     
+ } 
 }
 
 /* DISPOSITIVOS TOUCH MAS GRANDES QUE TABLET QUE NO TENGAN BARRA DE SCROLL 
