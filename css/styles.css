@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   line-height: 1.5;
   background-color: rgb(246, 241, 227);
 } 
@@ -40,7 +40,7 @@ h1{
 }
 
 .contenedor-leyenda-banner{
-    font-family: "Oswald", sans-serif;
+    font-family: 'Oswald', sans-serif;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -94,7 +94,7 @@ h1{
     .texto-tarjeta{
       display: flex;
       flex-direction: column;
-      font-family: "Oswald", sans-serif;
+      font-family: 'Oswald', sans-serif;
       font-weight: bold;
     }
 }
@@ -105,7 +105,7 @@ h1{
  .esports-section {
   background: #00040af8;
   padding: 60px 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 .container {
@@ -122,7 +122,7 @@ h1{
   font-size: 45px;
   margin-bottom: 10px;
   color: #e6eef6; 
-  font-family: "Oswald", sans-serif;           
+  font-family: 'Oswald', sans-serif;           
 }
 
 .subtitle {
@@ -179,7 +179,7 @@ h1{
 
 .contenedor-ranking{
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   background-image: url('../img/background-ranking.webp');
   background-size: cover;
   background-repeat: no-repeat;
@@ -367,7 +367,7 @@ h1{
 
 .contenedor-equipos{
     text-align: center;
-    font-family: "Oswald", sans-serif;
+    font-family: 'Oswald', sans-serif;
     background-image: url('../img/background-ranking.webp');
     background-size: cover;
     background-repeat: no-repeat;
@@ -388,6 +388,10 @@ h1{
     padding: 0 25px;
     width: 88%;
     margin: 15px auto 40px;
+
+    span{
+      color:  rgb(245, 189, 5);
+    }
 }
 
 .card-selector {
@@ -447,6 +451,7 @@ h1{
   background: rgba(0, 0, 0, 0.5);
 }
 
+
 .card input[type="radio"]:checked + .bg-img {
   filter: brightness(1) saturate(1.2);
 }
@@ -469,7 +474,7 @@ h1{
   font-size: 45px;
   margin-bottom: 10px;
   color: #e6eef6;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 .reviews-subtitle {
@@ -769,187 +774,186 @@ h1{
 
 @media screen and (min-width: 601px) and (max-width: 1023px) {
 
-  /*BLOQUE 1 - BANNER*/
+    /*BLOQUE 1 - BANNER*/
 
-  .contenedor-tarjetas-banner {
-    display: none;
-  }
-
-  .contenedor-banner{
-    padding: 30px;
-    height: auto;
-
-    video{
-      width: 100%;
-      object-fit: cover;
-      height: 100%;
-    }
-  }
-  
-  .contenedor-leyenda-banner{
-    position: relative;
-  }
-
-  .contenedor-leyenda-banner h2{
-    font-size: 4.5em;
-    -webkit-text-stroke: 0.3px #000;
-  }
-
-
-  /*BLOQUE 2 - 6 PARRAFOS DE TEXTO + IMAGEN*/
-
- 
-  .title {
-    font-size: 34px;
-    text-align: center;
-    padding: 0 20px;
-  }
-
-  .subtitle {
-    font-size: 18px;
-    text-align: center;
-    padding: 0 20px;
-  }
-
-  .content {
-    display: block;  
-    text-align: center;
-  }
-
-  .hero-image {
-    max-width: 90%;
-    margin: 0 auto 30px auto; 
-  }
-
-  .hero-image img {
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 40px; 
-  }
-
-  .hero-image figcaption {
-    font-size: 14px;
-    margin-top: 8px;
-    color: #9aa6b2;
-  }
-
-  .text {
-    font-size: 17px;
-    line-height: 1.7;
-    text-align: justify;
-    padding: 0 25px;
-  }
-
-  .text p {
-    margin-bottom: 18px;
-  }
-
-  .text strong {
-    color: rgb(245, 189, 5);
-  }
-
-  .text em {
-    color: rgb(241, 241, 136);
-  }
-
-  /*BLOQUE 3 - RANKING GLOBAL ESPORTS*/
-
-    .contenedor-tarjetas-principales{
-      flex-direction: column;
-      align-items: center;
+    .contenedor-tarjetas-banner {
+      display: none;
     }
 
+    .contenedor-banner{
+      padding: 30px;
+      height: auto;
 
-  .tarjeta-principal.bronce{
-    margin-bottom: 30px;
-  }
-
-    /*BLOQUE 4 - EQUIPOS*/
-
-    .titulo-gigantes {
-    font-size: 34px;
-    padding: 0 20px;
-    text-align: center;
-  }
-
-  .texto-gigantes {
-    font-size: 3.8vw;
-    padding: 10px 25px;
-    text-align: center;
-  }
-
-  /* Cards de equipos */
-  .card-selector {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-    padding: 20px;
-  }
-
-  .card {
-    height: 180px;
-  }
-
-  .card span {
-    font-size: 15px;
-    padding: 8px;
-  }
-
-  /* Reseñas */
-  .reviews-title {
-    font-size: 32px;
-  }
-
-  .reviews-subtitle {
-    font-size: 18px;
-    margin-bottom: 30px;
-  }
-
-  .reviews-grid {
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 25px;
-    padding: 0 20px;
-  }
-
-  .review-card {
-    padding: 18px;
-  }
-
-  .review-photo {
-    width: 80px;
-    height: 80px;
-  }
-
-  .review-text {
-    font-size: 16px;
-  }
-
-  .review-name {
-    font-size: 16px;
-  }
-
-  .review-icon {
-    font-size: 22px;
-    top: 8px;
-    right: 8px;
-  }
+      video{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+      }
+    }
     
+    .contenedor-leyenda-banner{
+      position: relative;
+    }
+
+    .contenedor-leyenda-banner h2{
+      font-size: 4.5em;
+      -webkit-text-stroke: 0.3px #000;
+    }
+
+
+    /*BLOQUE 2 - 6 PARRAFOS DE TEXTO + IMAGEN*/
+
+    .title {
+      font-size: 34px;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .content {
+      display: block;  
+      text-align: center;
+    }
+
+    .hero-image {
+      max-width: 90%;
+      margin: 0 auto 30px auto; 
+    }
+
+    .hero-image img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 40px; 
+    }
+
+    .hero-image figcaption {
+      font-size: 14px;
+      margin-top: 8px;
+      color: #9aa6b2;
+    }
+
+    .text {
+      font-size: 17px;
+      line-height: 1.7;
+      text-align: justify;
+      padding: 0 25px;
+    }
+
+    .text p {
+      margin-bottom: 18px;
+    }
+
+    .text strong {
+      color: rgb(245, 189, 5);
+    }
+
+    .text em {
+      color: rgb(241, 241, 136);
+    }
+
+    /*BLOQUE 3 - RANKING GLOBAL ESPORTS*/
+
+      .contenedor-tarjetas-principales{
+        flex-direction: column;
+        align-items: center;
+      }
+
+
+    .tarjeta-principal.bronce{
+      margin-bottom: 30px;
+    }
+
+      /*BLOQUE 4 - EQUIPOS*/
+
+      .titulo-gigantes {
+      font-size: 34px;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .texto-gigantes {
+      font-size: 3.8vw;
+      padding: 10px 25px;
+      text-align: center;
+    }
+
+    /* Cards de equipos */
+    .card-selector {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      padding: 20px;
+    }
+
+    .card {
+      height: 180px;
+    }
+
+    .card span {
+      font-size: 15px;
+      padding: 8px;
+    }
+
+    /* Reseñas */
+    .reviews-title {
+      font-size: 32px;
+    }
+
+    .reviews-subtitle {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .reviews-grid {
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 25px;
+      padding: 0 20px;
+    }
+
+    .review-card {
+      padding: 18px;
+    }
+
+    .review-photo {
+      width: 80px;
+      height: 80px;
+    }
+
+    .review-text {
+      font-size: 16px;
+    }
+
+    .review-name {
+      font-size: 16px;
+    }
+
+    .review-icon {
+      font-size: 22px;
+      top: 8px;
+      right: 8px;
+    }
+
+    /* FOOTER */
+
+  .contenedor-isologotipo{
+    width: 25%;
+  }
+
+  .datos-alumnos{
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .contenedor-footer{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
  }
 
- /* FOOTER */
-
-.contenedor-isologotipo{
-  width: 25%;
-}
-
-.datos-alumnos{
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-}
-
-.contenedor-footer{
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
 
