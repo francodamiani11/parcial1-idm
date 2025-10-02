@@ -1,20 +1,13 @@
-/* VARIABLES */
-
-:root {
-  
-}
-
-
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: "Oswald", serif;
-    line-height: 1.5;
-    background-color: rgb(246, 241, 227);
+  font-family: "Oswald", sans-serif;
+  line-height: 1.5;
+  background-color: rgb(246, 241, 227);
 } 
 
 h1{
@@ -33,7 +26,7 @@ h1{
   background-repeat: no-repeat;
   background-size: cover;
   width: calc(100vw - 15px);
-  height: 70vh;
+  height: 80vh;
   position: relative;
   padding: 30px;
   
@@ -65,10 +58,10 @@ h1{
       color: transparent;
       -webkit-text-fill-color: transparent;
       animation: shimmer 4s linear infinite;
-      font-size: 5.5em;
       text-align: center;
       -webkit-text-stroke: 0.5px #000000;
       text-transform: uppercase;
+      font-size: 4.8vw;
     }
    
 }
@@ -98,9 +91,6 @@ h1{
   display: flex;
   justify-content: center;
   
-  
-  
-  
     .texto-tarjeta{
       display: flex;
       flex-direction: column;
@@ -109,19 +99,17 @@ h1{
     }
 }
 
-.cifras{
-}
 
 /*BLOQUE 2 - 6 PARRAFOS DE TEXTO + IMAGEN*/
 
  .esports-section {
-  background: #00040af8;        
+  background: #00040af8;
   padding: 60px 0;
   font-family: Arial, sans-serif;
 }
 
 .container {
-  max-width: 1700px;          
+  max-width: 1700px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -387,6 +375,7 @@ h1{
     padding-top: 70px;
     width: 100%;
     min-height: 700px;
+    padding-bottom: 100px;
 }
 
 .titulo-gigantes{
@@ -394,11 +383,11 @@ h1{
 }
 
 .texto-gigantes{
-    margin-top: 15px;
-    margin-bottom: 25px;
     font-size: 2em;
     font-weight: 200;
-    max-width: 1900px;
+    padding: 0 25px;
+    width: 88%;
+    margin: 15px auto 40px;
 }
 
 .card-selector {
@@ -410,9 +399,7 @@ h1{
   margin: 0 auto;
   background-color: #1a1a1a;
   border-radius: 15px;
-  box-shadow: 0 0 30px gold;
-  
-  
+  box-shadow: 0 0 20px gold;
 }
 
 .card {
@@ -547,6 +534,43 @@ h1{
   color: #d4a508;
 }
 
+/* FOOTER */
+
+.contenedor-footer{
+  padding-top: 30px;
+  display: flex;
+  width: calc(100vw - 15px);
+  background-image: linear-gradient(45deg, #1e1b1c, transparent);
+  padding: 30px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contenedor-isologotipo{
+  width: 220px;
+}
+
+.contenedor-isologotipo img{
+  width: 100%;
+  border-radius: 30%;
+  border: 2px solid black;
+}
+
+.datos-alumnos{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5em;
+  text-shadow: 0 0 3px rgba(104, 76, 17, 0.863);
+  justify-content: center;
+}
+
+.redes-sociales ul{
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
 
 /* MOVIL */
 
@@ -555,13 +579,12 @@ h1{
 /*BLOQUE 1 - BANNER*/
 
 .contenedor-banner{
-  width: 100vw;
   height: 50vh;
   padding: 20px;
 }
 
 .contenedor-leyenda-banner h2 {
-  font-size: 2em;
+  font-size: 10vw;
   -webkit-text-stroke: 0.3px #000;
 }
 
@@ -580,7 +603,7 @@ h1{
   /*BLOQUE 2 - 6 PARRAFOS DE TEXTO + IMAGEN*/
 
   .esports-section {
-    padding: 30px 15px; 
+    padding: 30px 15px;
   }
 
   .title {
@@ -621,20 +644,17 @@ h1{
 
   /*BLOQUE 3 - RANKING GLOBAL ESPORTS*/
 
-.contenedor-ranking{
-
-h2{
+.contenedor-ranking h2{
     font-size: 3.2em;
-  }
 }
 
 .titulo-ranking{
-
   background: rgb(105 99 78);
   border-radius: 16px;
   box-shadow: 0 4px 30px 0px rgb(0 0 0 / 10%);
   backdrop-filter: blur(5px);
   border: 1px solid rgb(227 227 227 / 30%);
+  padding: 10px;
 
   p {
     font-weight: 200;
@@ -663,23 +683,21 @@ h2{
   }
 
   .texto-gigantes {
-    font-size: 15px;
-    line-height: 1.7;
+    font-size: 6vw;
+    line-height: 1.5;
     padding: 0 20px;
-    text-align: justify;
-    font-family: Arial, sans-serif;
-   
-
-    max-width: 90%;   
-    margin: 0 auto;   
+    font-family: 'Oswald', sans-serif;
+    max-width: 90%;
+    margin: 30px auto;
   }
   
 
   /* Cards de equipos */
+
   .card-selector {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
     gap: 12px;
-    padding: 10px;
+    padding: 15px;
   }
 
   .card {
@@ -729,7 +747,23 @@ h2{
     top: 5px;
     right: 5px;
   }
-  }
+
+  /* FOOTER */
+
+.contenedor-isologotipo{
+  width: 50%;
+}
+
+.contenedor-footer{
+  flex-direction: column;
+  gap: 25px;
+}
+
+.datos-alumnos{
+  align-items: center;
+}
+
+}
 
 /* TABLET */
 
@@ -839,16 +873,16 @@ h2{
   }
 
   .texto-gigantes {
-    font-size: 17px;
-    padding: 0 25px;
+    font-size: 3.8vw;
+    padding: 10px 25px;
     text-align: center;
   }
 
   /* Cards de equipos */
   .card-selector {
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
-    padding: 0 20px;
+    padding: 20px;
   }
 
   .card {
@@ -899,13 +933,24 @@ h2{
     right: 8px;
   }
     
- } 
+ }
+
+ /* FOOTER */
+
+.contenedor-isologotipo{
+  width: 25%;
 }
 
-/* DISPOSITIVOS TOUCH MAS GRANDES QUE TABLET QUE NO TENGAN BARRA DE SCROLL 
-@media screen and (min-width: 1023px) and (max-width: 1920px) {
-    .contenedor-banner{
-        width: 100vw;
-    }
+.datos-alumnos{
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
 
-}*/
+.contenedor-footer{
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+}
