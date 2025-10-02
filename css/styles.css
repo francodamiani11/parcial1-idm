@@ -25,7 +25,6 @@ h1{
   background-image: url('../img/GifBanner.gif');
   background-repeat: no-repeat;
   background-size: cover;
-  width: calc(100vw - 15px);
   height: 80vh;
   position: relative;
   padding: 30px;
@@ -544,7 +543,6 @@ h1{
 .contenedor-footer{
   padding-top: 30px;
   display: flex;
-  width: calc(100vw - 15px);
   background-image: linear-gradient(45deg, #1e1b1c, transparent);
   padding: 30px;
   justify-content: space-evenly;
@@ -858,7 +856,7 @@ h1{
 
     /*BLOQUE 3 - RANKING GLOBAL ESPORTS*/
 
-      .contenedor-tarjetas-principales{
+    .contenedor-tarjetas-principales{
         flex-direction: column;
         align-items: center;
       }
